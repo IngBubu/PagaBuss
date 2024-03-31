@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@+id/nav_inicio"
+            android:icon="@drawable/home"
+            android:title="@string/nav_inicio" />
+
+        <item android:id="@+id/nav_buscarRuta"
+            android:icon="@drawable/buscar"
+            android:title="@string/nav_buscar_ruta"/>
+
+    </group>
+
+    <item android:title="Cuenta">
+        <menu>
+            <item android:id="@+id/nav_cuenta"
+                android:icon="@drawable/cuenta"
+                android:title="@string/nav_cuenta"/>
+            <item android:id="@+id/nav_saldo"
+                android:icon="@drawable/saldo"
+                android:title="@string/nav_saldo"/>
+
+            <item android:id="@+id/nav_cerrarSesion"
+                android:icon="@drawable/cerrarsesion"
+                android:title="@string/btn_cerrar_sesion"/>
+        </menu>
+    </item>
+
+    <item android:title="Más">
+        <menu>
+            <item android:id="@+id/nav_descuento"
+                android:icon="@drawable/descuento"
+                android:title="@string/nav_descuento"/>
+            <item android:id="@+id/nav_sobreNosotros"
+                android:icon="@drawable/info"
+                android:title="@string/nav_sobre_nosotros"/>
+        </menu>
+    </item>
+
+
+</menu>
