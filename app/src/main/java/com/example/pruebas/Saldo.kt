@@ -3,9 +3,9 @@ package com.example.pruebas
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class DescuentoActivity : AppCompatActivity() {
+class Saldo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_descuento)
+        setContentView(R.layout.activity_saldo)
     }
 }

@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         startActivity(Intent(this, LoginActivity::class.java))
     }
 
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId){
@@ -89,23 +90,24 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         startActivity(intent)
     }
     private fun callBuscarRuta(){
-        val intent = Intent(this, BuscarRutaActivity::class.java)
+        val intent = Intent(this, BuscarRuta::class.java)
         startActivity(intent)
     }
     private fun callCuenta(){
-        val intent = Intent(this, CuentaActivity::class.java)
+        val intent = Intent(this, Cuenta::class.java)
         startActivity(intent)
     }
     private fun callSaldo(){
-        val intent = Intent(this, SaldoActivity::class.java)
+        val intent = Intent(this, Saldo::class.java)
         startActivity(intent)
     }
     private fun callDescuento(){
-        val intent = Intent(this, DescuentoActivity::class.java)
+        val intent = Intent(this, Descuento::class.java)
         startActivity(intent)
     }
     private fun callSobreNosotros(){
-        val intent = Intent(this, SobreNosotrosActivity::class.java)
+        val intent = Intent(this, SobreNosotros::class.java)
         startActivity(intent)
     }
 }
+
