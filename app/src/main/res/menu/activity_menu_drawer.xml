@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
-    <group>
-        <item android:id="@+id/nav_inicio"
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
             android:icon="@drawable/home"
             android:title="@string/nav_inicio" />
 
-        <item android:id="@+id/nav_buscarRuta"
+        <item
+            android:id="@+id/nav_buscarRuta"
             android:icon="@drawable/buscar"
-            android:title="@string/nav_buscar_ruta"/>
+            android:title="@string/nav_buscar_ruta" />
 
     </group>
-
     <item android:title="Cuenta">
         <menu>
-            <item android:id="@+id/nav_cuenta"
+            <item
+                android:id="@+id/nav_cuenta"
                 android:icon="@drawable/cuenta"
-                android:title="@string/nav_cuenta"/>
+                android:title="@string/nav_cuenta" />
+
             <item android:id="@+id/nav_saldo"
                 android:icon="@drawable/saldo"
                 android:title="@string/nav_saldo"/>
 
             <item android:id="@+id/nav_cerrarSesion"
                 android:icon="@drawable/cerrarsesion"
-                android:title="@string/btn_cerrar_sesion"/>
+                android:title="@string/btn_cerrar_sesion" />
         </menu>
     </item>
+
 
     <item android:title="Más">
         <menu>
@@ -37,6 +43,4 @@
                 android:title="@string/nav_sobre_nosotros"/>
         </menu>
     </item>
-
-
 </menu>

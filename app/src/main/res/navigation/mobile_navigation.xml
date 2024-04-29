@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.pruebas.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_cuenta"
+        android:name="com.example.pruebas.ui.cuenta.CuentaFragment"
+        android:label="@string/menu_cuenta"
+        tools:layout="@layout/fragment_cuenta" />
+
+    <fragment
+        android:id="@+id/nav_buscarRuta"
+        android:name="com.example.pruebas.ui.buscarRuta.BuscarRutaFragment"
+        android:label="@string/menu_buscarRuta"
+        tools:layout="@layout/fragment_buscarruta" />
+
+    <fragment
+        android:id="@+id/nav_saldo"
+        android:name="com.example.pruebas.ui.saldo.SaldoFragment"
+        android:label="@string/menu_saldo"
+        tools:layout="@layout/fragment_saldo" />
+
+    <fragment
+        android:id="@+id/nav_descuento"
+        android:name="com.example.pruebas.ui.descuento.DescuentoFragment"
+        android:label="@string/menu_descuento"
+        tools:layout="@layout/fragment_descuento" />
+
+    <fragment
+        android:id="@+id/nav_sobreNosotros"
+        android:name="com.example.pruebas.ui.sobreNosotros.SobreNosotrosFragment"
+        android:label="@string/menu_sobreNosotros"
+        tools:layout="@layout/fragment_sobre_nosotros" />
+</navigation>
