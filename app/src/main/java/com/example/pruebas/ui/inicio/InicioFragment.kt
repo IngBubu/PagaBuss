@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.pruebas.databinding.FragmentInicioBinding
@@ -28,10 +27,15 @@ class InicioFragment : Fragment() {
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        inicioViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        // Cambio aquí para trabajar con ImageView
+        val imageView = binding.QrPrueba
+        // Aquí puedes establecer cualquier lógica relacionada con la ImageView
+
+        // No olvides manejar la observación del ViewModel
+        inicioViewModel.qrImage.observe(viewLifecycleOwner) {
+            // Puedes realizar cualquier acción aquí basada en los cambios del ViewModel
         }
+
         return root
     }
 

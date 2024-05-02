@@ -6,8 +6,7 @@ import androidx.lifecycle.ViewModel
 
 class InicioViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    private val _qrImage = MutableLiveData<Int>().apply {
     }
-    val text: LiveData<String> = _text
+    val qrImage: LiveData<Int> = _qrImage
 }
