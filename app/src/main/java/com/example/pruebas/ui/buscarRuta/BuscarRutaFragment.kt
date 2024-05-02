@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.pruebas.databinding.FragmentBuscarrutaBinding
@@ -28,10 +27,15 @@ class BuscarRutaFragment : Fragment() {
         _binding = FragmentBuscarrutaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
-        buscarRutaViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        // Cambio aquí para trabajar con ImageView
+        val imageView = binding.mapaPrueba
+        // Aquí puedes establecer cualquier lógica relacionada con la ImageView
+
+        // No olvides manejar la observación del ViewModel
+        buscarRutaViewModel.mapaPrueba.observe(viewLifecycleOwner) {
+            // Puedes realizar cualquier acción aquí basada en los cambios del ViewModel
         }
+
         return root
     }
 
