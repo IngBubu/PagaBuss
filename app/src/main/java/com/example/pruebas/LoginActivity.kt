@@ -116,11 +116,13 @@ class LoginActivity : AppCompatActivity() {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, contraseña)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
+                    val userId = FirebaseAuth.getInstance().currentUser!!.uid
                     var dataRegister = SimpleDateFormat("dd/MM/yyyy").format(Date())
                     var dbRegister = FirebaseFirestore.getInstance()
 
                     dbRegister.collection("users").document(email).set(
                         hashMapOf(
+                            "userId" to userId,
                             "user" to email,
                             "dataRegister" to dataRegister
                         )
