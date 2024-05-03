@@ -1,3 +1,4 @@
+// InicioFragment.kt
 package com.example.pruebas.ui.inicio
 
 import android.os.Bundle
@@ -26,15 +27,13 @@ class InicioFragment : Fragment() {
 
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        // Cambio aquí para trabajar con ImageView
         val imageView = binding.QrPrueba
-        // Aquí puedes establecer cualquier lógica relacionada con la ImageView
 
-        // No olvides manejar la observación del ViewModel
-        inicioViewModel.qrImage.observe(viewLifecycleOwner) {
-            // Puedes realizar cualquier acción aquí basada en los cambios del ViewModel
+        inicioViewModel.qrImage.observe(viewLifecycleOwner) { qrImage ->
+            imageView.setImageBitmap(qrImage)
         }
+
+        inicioViewModel.generateQRCode()
 
         return root
     }

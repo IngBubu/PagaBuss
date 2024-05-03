@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_buscarRuta">
+    app:startDestination="@+id/nav_inicio">
 
     <fragment
         android:id="@+id/nav_inicio"
