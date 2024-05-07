@@ -55,6 +55,31 @@ class MenuActivity : AppCompatActivity() {
         tvUser.text = userEmail
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
+                R.id.nav_inicio -> {
+                    // Handle navigation to "Inicio" fragment
+                    findNavController(R.id.nav_host_fragment_content_menu).navigate(R.id.nav_inicio)
+                }
+                R.id.nav_cuenta -> {
+                    // Handle navigation to "Cuenta" fragment
+                    findNavController(R.id.nav_host_fragment_content_menu).navigate(R.id.nav_cuenta)
+                }
+                R.id.nav_buscarRuta -> {
+                    // Handle navigation to "Buscar Ruta" fragment
+                    findNavController(R.id.nav_host_fragment_content_menu).navigate(R.id.nav_buscarRuta)
+                }
+                R.id.nav_saldo -> {
+                    // Handle navigation to "Saldo" fragment
+                    findNavController(R.id.nav_host_fragment_content_menu).navigate(R.id.nav_saldo)
+                }
+                R.id.nav_descuento -> {
+                    // Handle navigation to "Descuento" fragment
+                    findNavController(R.id.nav_host_fragment_content_menu).navigate(R.id.nav_descuento)
+                }
+                R.id.nav_sobreNosotros -> {
+                    // Handle navigation to "Sobre Nosotros" fragment
+                    findNavController(R.id.nav_host_fragment_content_menu).navigate(R.id.nav_sobreNosotros)
+                }
+
                 R.id.nav_cerrarSesion -> {
                     signOut()
                     FirebaseAuth.getInstance().signOut()

@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.widget.doOnTextChanged
 import com.example.PagaBus.ValidateEmail
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthException
 import com.google.firebase.firestore.FirebaseFirestore
 import java.text.SimpleDateFormat
 import java.util.Date
