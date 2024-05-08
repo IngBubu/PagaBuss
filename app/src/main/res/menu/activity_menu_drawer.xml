@@ -23,7 +23,7 @@
                 android:title="@string/nav_cuenta" />
 
             <item android:id="@+id/nav_saldo"
-                android:icon="@drawable/saldo"
+                android:icon="@drawable/saldo_icono"
                 android:title="@string/nav_saldo"/>
 
             <item android:id="@+id/nav_cerrarSesion"

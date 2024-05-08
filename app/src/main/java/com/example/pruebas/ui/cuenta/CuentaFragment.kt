@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.pruebas.databinding.FragmentCuentaBinding
@@ -27,12 +27,14 @@ class CuentaFragment : Fragment() {
 
         _binding = FragmentCuentaBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textGallery
-        cuentaViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val imagePerfil: ImageView = binding.imagePerfil
+        // Ahora puedes usar imagePerfil para manipular la imagen
     }
 
     override fun onDestroyView() {
